@@ -40,7 +40,7 @@ public class SimpleContactServer {
             System.exit(1);
         }
 
-        // Start karte hain simple HTTP server
+        // Start karta hain simple HTTP server
         try {
             HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
             server.createContext("/contact", new ContactHandler());
@@ -58,7 +58,7 @@ public class SimpleContactServer {
         }
     }
 
-    // Load kare config file se Gmail user aur password
+    // Load karega config file se Gmail user aur password
     private static void loadConfiguration() {
         Properties props = new Properties();
         try (FileInputStream input = new FileInputStream(CONFIG_FILE)) {
@@ -215,3 +215,4 @@ public class SimpleContactServer {
         }
     }
 }
+
